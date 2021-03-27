@@ -1,0 +1,16 @@
+<!-- <div class="mb-3">
+    <input type="text" [(ngModel)]="filterBrandText" class="form-control" id="filterBrandText" 
+    placeholder="Marka giriniz">
+</div>
+<select class="form-select" [(ngModel)]="currentBrand" #brandSelection (change)="setQueryParams(currentBrand)" aria-label="Default select example">
+    <option [selected]="isAllBrandSelected()" [ngValue]=undefined>Tüm markalar</option>
+    <option [selected]="isCurrentBrand(brand)" *ngFor="let brand of brands | brandFilter:filterBrandText; index as i" [ngValue]="brand">{{brand.name}}</option>
+</select> -->
+
+<ul class="list-group">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+</ul>
