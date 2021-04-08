@@ -6,11 +6,10 @@
     <option [selected]="isAllBrandSelected()" [ngValue]=undefined>Tüm markalar</option>
     <option [selected]="isCurrentBrand(brand)" *ngFor="let brand of brands | brandFilter:filterBrandText; index as i" [ngValue]="brand">{{brand.name}}</option>
 </select> -->
-
-<ul class="list-group">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
-</ul>
+<div *ngIf="dataLoaded==false" class="spinner-border text-info" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <ul *ngIf="dataLoaded==true" class="list-group list-group-flush m-4">
+    <h3 style="font-weight: 700; color:darkcyan">Brands</h3>
+      <li class="list-group-item" *ngFor="let brand of brands">{{brand.name}}</li>
+    </ul>
