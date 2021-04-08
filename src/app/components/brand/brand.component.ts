@@ -24,4 +24,13 @@ export class BrandComponent implements OnInit {
       this.dataLoaded = true;
     })
   }
+
+  // getBrandClass(brand:Brand){
+  //   if(brand == this.currentBrand){
+  //     return "list-group-item active cursorPointer"
+  //   }else{
+  //     return "list-group-item cursorPointer "
+  //   }
+  // }
+
 }
